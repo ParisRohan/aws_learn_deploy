@@ -1,9 +1,9 @@
 from flask import Flask
-
-
 app = Flask(__name__)
+@app.route('/')
 
-@app.route('/',methods=['GET'])
+def homepage():
+    return '<h1> Hello Rohan :) </h1>'
 
 #use this while deploying
 if __name__ == "__main__":
